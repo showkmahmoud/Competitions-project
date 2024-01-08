@@ -2,3 +2,205 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeflex/primeflex.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Almarai", sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: "Almarai", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Almarai", sans-serif;
+  font-size: 1rem;
+  .container {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 60px;
+    position: relative;
+    z-index: 50;
+  }
+  .overlay {
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(21, 21, 21);
+    opacity: 50%;
+    z-index: 1;
+  }
+  .container-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .font-extra-bold {
+    font-weight: 800 !important;
+  }
+  .main-btn {
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    color: #000;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    background: #fff;
+    cursor: pointer;
+  }
+  .main-btn:hover {
+    box-shadow: 3px 3px 5px rgba(124, 124, 124, 0.5);
+  }
+
+  .container {
+    .text-6xl {
+      font-size: max(3.75vw, 72px) !important;
+    }
+    .three_half-rem {
+      font-size: max(2.9vw, 56px) !important;
+    }
+    .text-5xl {
+      font-size: max(2vw, 40px) !important;
+    }
+
+    .text-3xl {
+      font-size: max(1.6vw, 28px) !important;
+    }
+    .text-4xl {
+      font-size: max(1.6vw, 32px) !important;
+    }
+
+    .text-2xl {
+      font-size: max(1.25vw, 24px) !important;
+    }
+    .text-xl {
+      font-size: max(1vw, 20px) !important;
+    }
+    .text-lg {
+      font-size: max(1vw, 18px) !important;
+    }
+  }
+}
+
+@media (max-width: 1399.98px) {
+  body {
+    .container,
+    .footer-wrapper {
+      .text-6xl,
+      .three_half-rem {
+        font-size: min(3.5vw, 40px) !important;
+        line-height: min(2.8rem, 45px) !important;
+      }
+      .text-5xl {
+        font-size: min(3vw, 36px) !important;
+        line-height: min(3.5vw, 44px) !important;
+      }
+      .text-4xl,
+      .text-3xl {
+        font-size: min(1.6vw, 32px) !important;
+        line-height: min(2vw, 35px) !important;
+      }
+      .text-4xl,
+      .text-3xl {
+        font-size: 1.75rem !important;
+        line-height: 33px !important;
+      }
+      .text-2xl {
+        font-size: 1.5rem !important;
+        line-height: 35px !important;
+      }
+      .text-xl {
+        font-size: 1.25rem !important;
+        line-height: 33px !important;
+      }
+      .text-lg {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    .container,
+    .footer-wrapper {
+      padding: 0 24px;
+
+      .text-6xl,
+      .three_half-rem {
+        font-size: min(3.5vw, 40px) !important;
+        line-height: min(2.3rem, 45px) !important;
+      }
+      .text-5xl {
+        font-size: min(3vw, 36px) !important;
+        line-height: min(3vw, 35px) !important;
+      }
+      .text-4xl,
+      .text-3xl {
+        font-size: min(1.6vw, 32px) !important;
+        line-height: min(2vw, 35px) !important;
+      }
+      .text-4xl,
+      .text-3xl {
+        font-size: 1.75rem !important;
+        line-height: 33px !important;
+      }
+      .text-2xl {
+        font-size: 1.5rem !important;
+        line-height: 33px !important;
+      }
+      .text-xl {
+        font-size: 1.25rem !important;
+        line-height: 33px !important;
+      }
+      .text-lg {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 47.9375em) {
+  body {
+    .container {
+      padding: 0 24px;
+
+      .text-6xl,
+      .three_half-rem {
+        font-size: max(3.5vw, 40px) !important;
+        line-height: max(2.3rem, 45px) !important;
+      }
+      .text-5xl {
+        font-size: max(3vw, 36px) !important;
+        line-height: max(3vw, 45px) !important;
+      }
+      .text-4xl,
+      .text-3xl {
+        font-size: max(1.6vw, 32px) !important;
+        line-height: max(2vw, 35px) !important;
+      }
+      .text-4xl,
+      .text-3xl {
+        font-size: 1.75rem !important;
+        line-height: 33px !important;
+      }
+      .text-2xl {
+        font-size: 1.5rem !important;
+        line-height: 33px !important;
+      }
+      .text-xl {
+        font-size: 1.25rem !important;
+        line-height: 33px !important;
+      }
+      .text-lg {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
